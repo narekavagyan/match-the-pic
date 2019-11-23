@@ -1,3 +1,40 @@
+# Match the Pictures
+
+A simple memory game, where cards are displayed on the screen, face down, and as the user flips them, two at a time, if there is a match, the cards stay face up. If not, they revert after a couple of seconds to face down and the game continues until the user gets all the matches.
+
+#### Demo: [Math The Pics](https://narekavagyan.github.io/match-the-pic/)
+
+## Getting Started
+
+The easiest way to get started is to clone the repository:
+```ruby
+# Clone the repo
+git clone https://github.com/narekavagyan/match-the-pic.git
+
+# Change directory
+cd match-the-pic
+
+# Install NPM dependencies
+npm install
+
+# Simply build your app to dist
+npm run build
+
+# Then start your app 
+npm run start
+```
+- Navigate to given http://localhost:'port'/ from your browser
+
+## Features
+
+- React.js
+- Hooks
+  - state
+  - effects
+- setTimeout
+- addEventListener
+- CSS Animations
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -36,6 +73,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md]() file for details
 
 ## Learn More
 
