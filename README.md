@@ -2,7 +2,7 @@
 
 A simple memory game, where cards are displayed on the screen, face down, and as the user flips them, two at a time, if there is a match, the cards stay face up. If not, they revert after a couple of seconds to face down and the game continues until the user gets all the matches.
 
-#### Demo: [Math The Pics](https://narekavagyan.github.io/match-the-pic/)
+#### Demo: [Match the Pics](https://narekavagyan.github.io/match-the-pic/)
 
 ## Getting Started
 
