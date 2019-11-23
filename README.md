@@ -76,7 +76,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/narekavagyan/match-the-pic/blob/add-license-1/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/narekavagyan/match-the-pic/blob/add-license-1/LICENSE) file for details
 
 ## Learn More
 
