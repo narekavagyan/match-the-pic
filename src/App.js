@@ -77,7 +77,10 @@ function App() {
   }
 
   const restartGame = () => {
-    window.location.reload()
+    setSolved([])
+    setDisabled(false)
+    setFlipped([])
+    setCards(initializeDeck())
   }
 
   const isGameOver = solved.length === 16 && flipped.length === 0
