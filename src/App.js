@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Board from './components/board/board';
 import initializeDeck from './deck';
+import GameOver from './components/gameover/gameover';
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(() => {
     preloadImages()
-  }, [cards.join(",")])
+  }, [cards.join(",")]) 
 
   useEffect(() => {
     const resizeListener = window.addEventListener('resize', resizeBoard)
@@ -26,6 +27,7 @@ function App() {
 
   const handleClick = (id) => {
     setDisabled(true)
+
     if (flipped.length === 0) {
       setFlipped([id])
       setDisabled(false)
@@ -73,10 +75,17 @@ function App() {
       ),
     )
   }
+
+  const restartGame = () => {
+    window.location.reload()
+  }
+
+  const isGameOver = solved.length === 16 && flipped.length === 0
   
   return (
     <div>
-      <h2 className='title'>Match The Pictures</h2>
+      {isGameOver ? <GameOver restartGame={restartGame} /> : 
+      <h2 className='title'>Match The Pictures</h2>}
       <Board
         dimension={dimension}
         cards={cards}
@@ -84,7 +93,7 @@ function App() {
         handleClick={handleClick}
         disabled={disabled}
         solved={solved}
-      />
+        />
     </div>
   );
 }

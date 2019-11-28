@@ -3,6 +3,7 @@
   display: inline-block;
   border: 1px solid white;
   background: black;
+  cursor: pointer;
 }
 
 .flip-container.flipped .flipper {

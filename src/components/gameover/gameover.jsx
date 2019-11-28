@@ -1,10 +1,10 @@
 import React from 'react';
-import './gameover.css';
+import './gameover.css'
 
-const GameOver = ({ isOver }) => (
-  <div className="justify-right">
-    <h1>You Win!</h1>
-    <button className="restart-button" onClick={isOver}>Restart Game</button>
+const GameOver = ({ restartGame }) => (
+  <div className="justify-center">
+    <h1>YOU WIN!</h1>
+    <button className="restart-button" onClick={restartGame}>Restart Game</button>
   </div>
 );
 
