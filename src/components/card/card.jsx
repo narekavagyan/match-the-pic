@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './card.css';
 
 function Card({handleClick, id, type, flipped, solved, height, width, disabled}) {
   return <div
-    className={`flip-container ${flipped ? 'flipped' : ''}`}
+    className={`flip-container ${flipped || solved ? 'flipped' : ''}`}
     style={{width, height}}
     onClick={() => disabled ? null : handleClick(id)}
   >
     <div className='flipper'>
       <img
         style={{height, width}}
-        className={flipped ? 'front' : 'back'}
+        className={flipped || solved ? 'front' : 'back'}
         src={flipped || solved ? `${type}.jpg` : 'back.png'}
       />
     </div>
